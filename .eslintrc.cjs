@@ -23,6 +23,14 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    'max-len': [
+      'warn',
+      {
+        code: 80,
+      },
+    ],
     'no-console': 0,
+    // ESModule tidak bisa mengimpor file tanpa ekstensi, tidak seperti CommonJS
+    'import/extensions': 0,
   },
 };
